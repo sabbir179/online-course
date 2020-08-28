@@ -1,24 +1,41 @@
-import React from 'react';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from 'react';
+
 import './Courses.css'
-import {Card, Button} from 'react-bootstrap'
+import fakeData from '../..';
+import CourseCard from '../CourseCard/CourseCard';
+import Cart from '../Cart/Cart';
+
 
 const Courses = () => {
+    // console.log(fakeData);
+    const firstFifteen = fakeData.slice(0, 15);
+    const [course, setCourse] = useState(firstFifteen);
+    const [cart, setCart] = useState([]);
+
+    const handleAddCourse = (course) =>{
+        const newCart = [...cart, course];
+        setCart(newCart);
+    }
+
     return (
         <div className="course">
             <div className="course-container"> 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Price: $ 40
-                    </Card.Text>
-                    <Button variant="primary">Enroll now</Button>
-                </Card.Body>
-                </Card>
+            
+            {
+                course.map(cd => <CourseCard
+                
+                    handleAddCourse = {handleAddCourse}
+                    course = {cd}
+                >
+
+                </CourseCard>)
+            }
+            
+            
             </div>
-            <div className="cart-container" >this is cart container</div>
+            <div className="cart-container" >
+                <Cart cart = {cart} ></Cart>
+            </div>
         </div>
         
     );

@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import CouserData from './FakeData/CourseData'
+
+const fakeData = [CouserData]
+
+export default fakeData;
 
 ReactDOM.render(
   <React.StrictMode>

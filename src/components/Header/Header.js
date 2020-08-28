@@ -1,5 +1,5 @@
 import React from 'react';
-import Baner from '../assets/image/baner.jpg'
+import Banner from '../assets/image/banner.jpg'
 import './Header.css'
 
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -20,7 +20,7 @@ const Header = () => {
 
                     <Col md={48}>
                     
-                        <img src= {Baner} alt=""/>
+                        <img src= {Banner} alt=""/>
                       
                     </Col>
 
