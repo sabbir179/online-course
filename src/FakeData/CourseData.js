@@ -41,7 +41,7 @@ var courseData = [
         "id": "GG",
         "courseName": "Advance JavaScript", 
         "price": 30, 
-        "img":"https://www.pinclipart.com/picdir/middle/113-1136521_web-development-clipart-technology-development-website-in-development.png" 
+        "img":"https://codesquery.com/wp-content/uploads/2019/10/learn_advance_javascript_es6.png" 
     },
     {
         "id": "HH",

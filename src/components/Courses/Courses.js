@@ -25,8 +25,8 @@ const Courses = () => {
     return (
         <div className="course ">
                 
-                    <div className="course-container "> 
-                    {/*  here d-flex is not working properly // d-flex flex-row bd-highlight mb-4  */}
+                    <div className="course-container d-flex flex-wrap "> 
+                    
                         {
                             course.map(cdr => <CourseCard
                             
