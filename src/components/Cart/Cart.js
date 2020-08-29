@@ -13,9 +13,9 @@ const Cart = (props) => {
 
     return (
         <div className="enroll">
-            <h3>Enroll Summary</h3>
-            <p>Course ordered: {cart.length} </p>
-            <p>total course price: {totalPrice} </p>
+            <h3 id="enroll-course" >Enroll Summary</h3>
+            <p >Course ordered: <span className="num" >{cart.length}</span>  </p>
+            <p>total course price:  <span className="num" > $ {totalPrice}</span>  </p>
         </div>
     );
 };

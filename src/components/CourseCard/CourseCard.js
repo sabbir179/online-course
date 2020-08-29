@@ -7,9 +7,9 @@ const CourseCard = (props) => {
     const {img, courseName, price }  = props.course;
     
     return (
-        <div className="course-card">
+        <div className="course-card  ">
             
-            <Card style={{ width: '18rem' }} className="box">
+            <Card border="info"  style={{ width: '18rem' }} className="box  ">
                 <Card.Img variant="top" src= {img} />
                 <Card.Body>
                     <Card.Title>  {courseName}</Card.Title>

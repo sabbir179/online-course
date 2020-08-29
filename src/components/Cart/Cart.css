@@ -1,0 +1,18 @@
+.num{
+    background-color: lightgrey;
+    margin : 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px lightgray;
+}
+
+#enroll-course{
+    margin-bottom: 50px;
+}
+
+.enroll{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 5px 15px lightgray;
+}
