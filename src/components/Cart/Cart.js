@@ -15,7 +15,7 @@ const Cart = (props) => {
         <div className="enroll">
             <h3>Enroll Summary</h3>
             <p>Course ordered: {cart.length} </p>
-            <p>Number of course added: </p>
+            <p>total course price: {totalPrice} </p>
         </div>
     );
 };
